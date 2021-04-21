@@ -1,14 +1,17 @@
+ASCII_SIZE=256
+
+def max_occuring_character(str):
+    count=[0]*ASCII_SIZE
+    max=-1
+    c=''
+    for i in str:
+        count[ord(i)]+=1
+    for i in str:
+        if max<count[ord(i)]:
+            max=count[ord(i)]
+            c=i
+            return c
+
+
 str=input()
-var1=sorted(str)
-max=-1
-print(var1)
-for i in range(len(var1)-1):
-    for j in range(i+1,len(var1)):
-        if var1[i]!=var1[j]:
-            s=j-i 
-            print(s)
-            if max<s:
-                max==s
-                var2=var1[i]         
-            i=j
-print(var2)
+print(max_occuring_character(str))
