@@ -10,7 +10,7 @@ def max_occuring_character(str):
         if max<count[ord(i)]:
             max=count[ord(i)]
             c=i
-            return c
+    return c
 
 
 str=input()
