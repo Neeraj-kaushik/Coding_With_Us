@@ -2,8 +2,9 @@ def row_wise_sum(li,n,m):
     sum1=0
     for i in range(n):
         for j in range(m):
-            sum1=sum1+li[j]
-    print(sum1)
+            sum1=sum1+li[i][j]
+        print(sum1)
+        sum1=0
 
 t=int(input())
 while t>0:
