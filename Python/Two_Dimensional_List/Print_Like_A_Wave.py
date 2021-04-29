@@ -1,9 +1,10 @@
 def Print_Like_Wave(li,n,m):
-    for i in range(n):
-        for j in range(m):
+    for j in range(m):
+        for ele in li:
             if j%2==0:
-                print(li[j][i],end=' ')
-        
+                print(ele[j],end=' ')
+            else:
+                
                           
 
 t=int(input())
